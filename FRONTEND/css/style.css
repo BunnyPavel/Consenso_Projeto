@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+
+.fonte{
+  font-family: 'Encode Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  color: #5A5A5A;
+}
+
+.logofonte {
+  font-family: 'Black Han Sans', sans-serif;
+  color: white;
+  letter-spacing: 0em;
+  padding-top: 1%;
+}
+
+.footer {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+             /* Footer height */
+}
+
+.footerColor {
+
+background-color: #d9d9d9;
+
+}
+
+.tabela{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30em;
+}
+.hora{
+  position: relative;
+  left: 163px;
+}
+.botao{
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #0057DF;
+  width: 305px;
+  height: 35px; 
+  border-radius: 10px; 
+  border-style: none;
+}
+.borda{
+  border: solid 2px #5A5A5A;
+}
+
+.padding {
+
+  padding: 10px 50px 0px 50px;
+  pointer-events: none;
+}
+
+.margin {
+
+  margin: 40px 20px 40px 20px;
+
+}
+
+.navfonte {
+
+  font-family: 'Encode Sans', sans-serif !important;
+
+}
+
+.position {
+
+  position: relative;
+}
+
+.divnav {
+
+  height: 90px
+
+}
+
+.footer {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #0057DF;
+  height: 12vh;
+  
+
+}
+
+
+.button2 {
+
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #FFB800;
+  text-decoration: none;
+  padding:40px;
+
+}
+
+
+a#listinha {
+
+  color: white;
+  height: 50px;
+
+
+}
+
+button#button1 {
+
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  
+
+}
+
+.button {
+
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+
+}
+
+
+
+.button2 {
+
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+
+}
+.button2:hover {
+
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: #FFB800;
+  text-decoration: none;
+  border-bottom: solid 7px #FFB800;
+
+}
+.buttonSelect {
+
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: #FFB800;
+  text-decoration: none;
+  pointer-events: none;
+  border-bottom: solid 7px #FFB800;
+
+}
+
+
+
+
+.divfooter {
+
+
+  margin: 0px !important;
+}
+
+.ul {
+
+  padding: 10px 10px 10px 10px;
+
+}
+
+.label {
+
+  color: #5A5A5A;
+  font-weight: bold
+
+
+}
+
+.svg {
+
+  
+  width: 16px;
+
+}
+
+textarea::placeholder{
+
+  color: #A7A7A7;
+
+}
+input ::placeholder{
+
+  color: #A7A7A7;
+
+}

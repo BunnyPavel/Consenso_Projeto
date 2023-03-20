@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Estilo para o container principal */
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      /* Estilo para a tabela de agendamentos */
+      .agenda-table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+      }
+      .agenda-table th, .agenda-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      .agenda-table th {
+        background-color: #ddd;
+      }
+      /* Estilo para o formulário de agendamento */
+      .agenda-form {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+      }
+      .agenda-form input[type="text"], .agenda-form input[type="date"], .agenda-form textarea {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Tabela de agendamentos -->
+      <table class="agenda-table">
+        <tr>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Evento</th>
+        </tr>
+        <!-- Aqui seriam adicionadas as linhas de agendamento -->
+      </table>
+      <!-- Formulário de agendamento -->
+      <form class="agenda-form">
+        <input type="text" placeholder="Nome do evento" required>
+        <input type="date" placeholder="Data do evento" required>
+        <textarea placeholder="Detalhes do evento"></textarea>
+        <input type="submit" value="Agendar">
+      </form>
+    </div>
+    <script>
+      // Adicionar nova linha de agendamento na tabela ao submeter o formulário
+      const form = document.querySelector(".agenda-form");
+      const table = document.querySelector(".agenda-table");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const nome = form.querySelector("input[type='text']").value;
+        const data = form.querySelector("input[type='date']").value;
+        const detalhes = form.querySelector("textarea").value;
+        const novaLinha = document.createElement("tr");
+        novaLinha.innerHTML = `
+          <td>${data}</td>
+          <td>--</td>
+          <td>${nome}</td>
+        `;
+        table.appendChild(novaLinha);
+      });
+    </script
